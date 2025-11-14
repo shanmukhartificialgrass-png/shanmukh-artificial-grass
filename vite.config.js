@@ -6,14 +6,8 @@ import tailwindcss from '@tailwindcss/vite'
 export default defineConfig({
   plugins: [react(), tailwindcss()],
   build: {
-    // Enable minification for better performance
-    minify: 'terser',
-    terserOptions: {
-      compress: {
-        drop_console: true, // Remove console logs in production
-        drop_debugger: true
-      }
-    },
+    // Enable minification for better performance (using default esbuild)
+    minify: 'esbuild',
     // Enable source maps for debugging (optional)
     sourcemap: false,
     // Optimize chunk size
