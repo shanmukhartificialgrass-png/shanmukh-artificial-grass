@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { Home, ArrowLeft, Search, Phone, Mail } from 'lucide-react'
+import SEO from '../components/SEO'
 
 const NotFound = () => {
   const quickLinks = [
@@ -13,6 +14,12 @@ const NotFound = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-green-50 via-white to-blue-50 flex items-center justify-center px-4 py-20">
+      <SEO 
+        title="404 - Page Not Found | Shanmukh Artificial Grass"
+        description="The page you are looking for could not be found. Visit our homepage to explore premium artificial grass and bird spike solutions in Nellore."
+        keywords="404, page not found"
+        type="website"
+      />
       <div className="max-w-4xl w-full">
         <div className="text-center mb-12">
           {/* 404 Animation */}

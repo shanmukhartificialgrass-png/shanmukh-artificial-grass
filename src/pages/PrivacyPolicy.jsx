@@ -1,10 +1,17 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { Shield, Lock, Eye, Database, UserCheck, FileText, AlertCircle, Mail } from 'lucide-react'
+import SEO from '../components/SEO'
 
 const PrivacyPolicy = () => {
   return (
     <div className="min-h-screen">
+      <SEO 
+        title="Privacy Policy - Shanmukh Artificial Grass | Data Protection & Privacy"
+        description="Read our privacy policy to understand how Shanmukh Artificial Grass collects, uses, and protects your personal information. We are committed to protecting your privacy."
+        keywords="privacy policy, data protection, shanmukh privacy, information security, customer privacy"
+        type="website"
+      />
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-green-50 via-white to-green-50 pt-24 pb-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

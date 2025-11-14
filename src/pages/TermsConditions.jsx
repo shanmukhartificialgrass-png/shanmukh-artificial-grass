@@ -1,10 +1,17 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { FileText, CheckCircle, AlertTriangle, Scale, Shield, Wrench, CreditCard, Mail } from 'lucide-react'
+import SEO from '../components/SEO'
 
 const TermsConditions = () => {
   return (
     <div className="min-h-screen">
+      <SEO 
+        title="Terms & Conditions - Shanmukh Artificial Grass | Service Terms"
+        description="Review our terms and conditions for artificial grass installation and bird spike services in Nellore. Understand our service policies, warranties, and customer obligations."
+        keywords="terms and conditions, service terms, warranty policy, installation terms, shanmukh terms"
+        type="website"
+      />
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-green-50 via-white to-green-50 pt-20 md:pt-24 pb-12 md:pb-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import QuoteModal from '../components/QuoteModal'
+import SEO from '../components/SEO'
 import { Users, Target, Award, Heart, Clock, Shield, CheckCircle, ArrowRight } from 'lucide-react'
 
 const About = () => {
@@ -66,6 +67,12 @@ const About = () => {
 
   return (
     <div className="min-h-screen">
+      <SEO 
+        title="About Us - Shanmukh Artificial Grass | Leading Artificial Grass & Bird Spike Installers in Nellore"
+        description="Learn about Shanmukh Artificial Grass - Nellore's trusted artificial grass and bird spike installation experts with 5+ years experience, 500+ successful installations, and 100% customer satisfaction. Premium quality guaranteed."
+        keywords="about shanmukh artificial grass, artificial grass company nellore, bird spike installers nellore, professional grass installers, nellore landscaping company, artificial turf experts, synthetic grass installation team, bird control specialists nellore"
+        type="website"
+      />
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-green-50 via-white to-green-50 pt-24 pb-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

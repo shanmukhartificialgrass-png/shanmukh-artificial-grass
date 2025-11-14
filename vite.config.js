@@ -5,4 +5,30 @@ import tailwindcss from '@tailwindcss/vite'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react(), tailwindcss()],
+  build: {
+    // Enable minification for better performance
+    minify: 'terser',
+    terserOptions: {
+      compress: {
+        drop_console: true, // Remove console logs in production
+        drop_debugger: true
+      }
+    },
+    // Enable source maps for debugging (optional)
+    sourcemap: false,
+    // Optimize chunk size
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          'react-vendor': ['react', 'react-dom', 'react-router-dom'],
+          'icons': ['lucide-react'],
+          'email': ['@emailjs/browser']
+        }
+      }
+    }
+  },
+  // Optimize dependencies
+  optimizeDeps: {
+    include: ['react', 'react-dom', 'react-router-dom', 'lucide-react', '@emailjs/browser']
+  }
 })

@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { Phone, Mail, MapPin, Send, CheckCircle } from 'lucide-react'
 import emailjs from '@emailjs/browser'
+import SEO from '../components/SEO'
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -91,6 +92,12 @@ const Contact = () => {
 
   return (
     <div className="min-h-screen">
+      <SEO 
+        title="Contact Us - Shanmukh Artificial Grass | Get Free Quote for Artificial Grass & Bird Spikes in Nellore"
+        description="Contact Shanmukh Artificial Grass for professional artificial grass and bird spike installation in Nellore. Get free quotes, consultation, and expert advice. Call us today for premium landscaping solutions."
+        keywords="contact artificial grass nellore, get quote artificial grass, bird spike installation contact, shanmukh contact, nellore grass installers contact, free consultation artificial grass, artificial grass quote nellore"
+        type="website"
+      />
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-green-50 via-white to-green-50 pt-24 pb-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

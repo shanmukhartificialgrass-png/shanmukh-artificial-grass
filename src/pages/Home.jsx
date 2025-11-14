@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { ArrowRight, Star, Users, Award, CheckCircle, Leaf, Shield, Phone, ChevronLeft, ChevronRight, Droplets, Clock, Sun, Heart, Home as HomeIcon, Building, Sparkles, TreePine } from 'lucide-react'
 import QuoteModal from '../components/QuoteModal'
+import SEO from '../components/SEO'
 
 const Home = () => {
   const [currentSlide, setCurrentSlide] = useState(0)
@@ -12,19 +13,22 @@ const Home = () => {
       image: 'https://ik.imagekit.io/wlo5q0w8i/Images/AG1.jpeg?updatedAt=1763088504409',
       title: 'Premium Artificial Grass',
       subtitle: 'Transform Your Outdoor Space',
-      description: 'Beautiful, low-maintenance artificial grass solutions for homes and businesses'
+      description: 'Beautiful, low-maintenance artificial grass solutions for homes and businesses',
+      alt: 'Premium artificial grass installation in Nellore - lush green synthetic turf for residential and commercial properties'
     },
     {
       image: 'https://ik.imagekit.io/wlo5q0w8i/Images/AG2.jpg?updatedAt=1763088550575',
       title: 'Professional Installation',
       subtitle: 'Expert Craftsmanship',
-      description: 'Skilled installation team with years of experience and attention to detail'
+      description: 'Skilled installation team with years of experience and attention to detail',
+      alt: 'Professional artificial grass installation team in Nellore - expert craftsmanship and quality service'
     },
     {
       image: 'https://ik.imagekit.io/wlo5q0w8i/Images/BS1.jpg?updatedAt=1763088701893',
       title: 'Bird Control Solutions',
       subtitle: 'Protect Your Property',
-      description: 'Effective and humane bird spike solutions for lasting protection'
+      description: 'Effective and humane bird spike solutions for lasting protection',
+      alt: 'Bird spikes installation in Nellore - effective bird control and deterrent solutions for buildings'
     }
   ]
 
@@ -33,19 +37,22 @@ const Home = () => {
       name: '25-35mm Grass',
       height: '25-35mm',
       image: 'https://ik.imagekit.io/wlo5q0w8i/Images/25mm%20AG.webp?updatedAt=1763088898293',
-      features: ['3-tone color', 'Monofilament fiber', 'Single & double layer']
+      features: ['3-tone color', 'Monofilament fiber', 'Single & double layer'],
+      alt: '25-35mm artificial grass - 3-tone synthetic turf with monofilament fiber for residential gardens in Nellore'
     },
     {
       name: '40mm Premium Grass',
       height: '40mm',
       image: 'https://ik.imagekit.io/wlo5q0w8i/Images/40mm%20AG.jpg?updatedAt=1763088974784',
-      features: ['Double layer backing', 'High durability', 'Luxury installations']
+      features: ['Double layer backing', 'High durability', 'Luxury installations'],
+      alt: '40mm premium artificial grass - double layer backing synthetic turf for luxury installations in Nellore'
     },
     {
       name: '50mm Luxury Grass',
       height: '50mm',
       image: 'https://ik.imagekit.io/wlo5q0w8i/Images/50mm%20AG.webp?updatedAt=1763088974918',
-      features: ['Premium quality', 'FIFA-standard feel', 'Sports & landscapes']
+      features: ['Premium quality', 'FIFA-standard feel', 'Sports & landscapes'],
+      alt: '50mm luxury artificial grass - FIFA-standard premium synthetic turf for sports fields and landscapes in Nellore'
     }
   ]
 
@@ -154,6 +161,12 @@ const Home = () => {
 
   return (
     <div className="min-h-screen">
+      <SEO 
+        title="Shanmukh Artificial Grass - Best Artificial Grass & Bird Spikes in Nellore | Premium Installation Services"
+        description="Leading artificial grass and bird spike installers in Nellore. Premium quality synthetic grass, professional installation, and bird control solutions. Transform your outdoor spaces with eco-friendly, low-maintenance artificial turf. 500+ successful installations."
+        keywords="artificial grass, artificial grass in nellore, bird spikes, bird spikes in nellore, best artificial grass installers, synthetic grass nellore, artificial turf installation, fake grass nellore, bird control solutions, bird deterrent spikes, artificial lawn nellore, synthetic turf installers, premium artificial grass, garden grass installation, balcony grass nellore, terrace grass, sports turf nellore, pet-friendly artificial grass, landscaping nellore, outdoor artificial grass"
+        type="website"
+      />
       {/* Hero Image Slider */}
       <section className="relative h-[50vh] sm:h-[60vh] md:h-[70vh] overflow-hidden">
         <div 
@@ -167,7 +180,7 @@ const Home = () => {
             >
               <img
                 src={slide.image}
-                alt={slide.title}
+                alt={slide.alt || slide.title}
                 className="w-full h-full object-cover"
               />
               <div className="absolute inset-0 bg-black/40"></div>
@@ -250,8 +263,8 @@ const Home = () => {
               <div key={index} className="bg-white border border-gray-200 rounded-xl overflow-hidden hover:shadow-lg transition-shadow duration-300">
                 <img 
                   src={grass.image} 
-                  alt={grass.name}
-                  className="w-full h-36 md:h-40 object-cover"
+                  alt={grass.alt || grass.name}
+                  className="w-full h-40 sm:h-48 object-cover"
                 />
                 <div className="p-4 md:p-5">
                   <h3 className="text-base md:text-lg font-bold text-gray-900 mb-2">{grass.name}</h3>

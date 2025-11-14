@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import QuoteModal from '../components/QuoteModal'
+import SEO from '../components/SEO'
 import { 
   Shield, 
   CheckCircle, 
@@ -141,6 +142,12 @@ const BirdSpikes = () => {
 
   return (
     <div className="min-h-screen">
+      <SEO 
+        title="Bird Spikes in Nellore - PROTECH Bird Control Solutions | Shanmukh Bird Spike Installation"
+        description="Professional bird spike installation in Nellore. PROTECH polycarbonate and stainless steel bird spikes for effective bird control. Humane, durable, and maintenance-free bird deterrent solutions for residential and commercial properties."
+        keywords="bird spikes, bird spikes in nellore, bird control nellore, bird deterrent spikes, bird proofing nellore, anti bird spikes, bird spike installation, pigeon spikes nellore, bird control solutions, balcony bird spikes, terrace bird protection, PROTECH bird spikes, stainless steel bird spikes, polycarbonate bird spikes"
+        type="product.group"
+      />
       {/* Hero Banner */}
       <section className="relative bg-gradient-to-br from-blue-50 via-white to-blue-50 pt-24 pb-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

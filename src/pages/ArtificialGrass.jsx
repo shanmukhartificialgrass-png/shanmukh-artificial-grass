@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import QuoteModal from '../components/QuoteModal'
+import SEO from '../components/SEO'
 import { 
   Leaf, 
   CheckCircle, 
@@ -158,6 +159,12 @@ const ArtificialGrass = () => {
 
   return (
     <div className="min-h-screen">
+      <SEO 
+        title="Premium Artificial Grass in Nellore - Shanmukh | 25mm, 35mm, 40mm, 50mm Synthetic Grass Installation"
+        description="Best quality artificial grass in Nellore. Choose from 25mm, 35mm, 40mm, and 50mm pile heights. Professional installation for residential, commercial, and sports applications. Eco-friendly, pet-safe, low-maintenance synthetic turf solutions."
+        keywords="artificial grass nellore, synthetic grass nellore, fake grass nellore, artificial turf nellore, 25mm artificial grass, 40mm artificial grass, 50mm artificial grass, premium artificial grass, garden grass nellore, balcony grass, terrace grass, sports turf, pet-friendly artificial grass, artificial lawn installation, synthetic turf suppliers"
+        type="product.group"
+      />
       {/* Hero Banner */}
       <section className="relative bg-gradient-to-br from-green-50 via-white to-green-50 pt-24 pb-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
